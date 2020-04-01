@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4052fdc819654a76b36838ad93174655 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_4052fdc819654a76b36838ad93174655" ></div>
+        
+</body>
+<script>    
+    
+            var map_4052fdc819654a76b36838ad93174655 = L.map(
+                "map_4052fdc819654a76b36838ad93174655",
+                {
+                    center: [34.0, -118.35],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_08b95c9d331e435e9d530d387a300a07 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4052fdc819654a76b36838ad93174655);
+        
+    
+            var circle_marker_04c9bbd225a449ba88f29edcc004bcda = L.circleMarker(
+                [34.03429917142857, -118.26396817142857],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_4052fdc819654a76b36838ad93174655);
+        
+    
+        var popup_95921dd0f76d495bb04ee50d4086d1d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d119e73aba464b20ad8f0cec64773b0d = $(`<div id="html_d119e73aba464b20ad8f0cec64773b0d" style="width: 100.0%; height: 100.0%;">150, Venice Boulevard, South Park, Jefferson, Los Angeles, Los Angeles County, California, 90015, United States of America</div>`)[0];
+            popup_95921dd0f76d495bb04ee50d4086d1d9.setContent(html_d119e73aba464b20ad8f0cec64773b0d);
+        
+
+        circle_marker_04c9bbd225a449ba88f29edcc004bcda.bindPopup(popup_95921dd0f76d495bb04ee50d4086d1d9)
+        ;
+
+        
+    
+    
+            var circle_marker_d718e79641154929b589df22bef6195a = L.circleMarker(
+                [34.024102142857146, -118.23917257142857],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_4052fdc819654a76b36838ad93174655);
+        
+    
+        var popup_1303f9c7b9124fbc9247da07dae6c8c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_baf62d6c803f4e649bc80a7b2ccd2d1b = $(`<div id="html_baf62d6c803f4e649bc80a7b2ccd2d1b" style="width: 100.0%; height: 100.0%;">1444, South Alameda Street, Nevin, Little Tokyo Historic District, Los Angeles, Los Angeles County, California, 90021, United States of America</div>`)[0];
+            popup_1303f9c7b9124fbc9247da07dae6c8c8.setContent(html_baf62d6c803f4e649bc80a7b2ccd2d1b);
+        
+
+        circle_marker_d718e79641154929b589df22bef6195a.bindPopup(popup_1303f9c7b9124fbc9247da07dae6c8c8)
+        ;
+
+        
+    
+    
+            var circle_marker_994d7cb075024d86b8f554a00ae1fd0c = L.circleMarker(
+                [33.9590495, -118.30901920000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_4052fdc819654a76b36838ad93174655);
+        
+    
+        var popup_7bfbc0d762e14c209d68050b8f74462e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50cc2e72eadd4e4583f00b09b2f55012 = $(`<div id="html_50cc2e72eadd4e4583f00b09b2f55012" style="width: 100.0%; height: 100.0%;">South Western Avenue, Los Angeles, Los Angeles County, California, 90047, United States of America</div>`)[0];
+            popup_7bfbc0d762e14c209d68050b8f74462e.setContent(html_50cc2e72eadd4e4583f00b09b2f55012);
+        
+
+        circle_marker_994d7cb075024d86b8f554a00ae1fd0c.bindPopup(popup_7bfbc0d762e14c209d68050b8f74462e)
+        ;
+
+        
+    
+    
+            var circle_marker_8f35e8e3e19e4eb38f1e141b73478fe2 = L.circleMarker(
+                [33.998531608712966, -118.20617079884519],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_4052fdc819654a76b36838ad93174655);
+        
+    
+        var popup_f025ded060e24f1381de06f8b9fbaa24 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c43f26c6cac14aa081018a794d3a0d6e = $(`<div id="html_c43f26c6cac14aa081018a794d3a0d6e" style="width: 100.0%; height: 100.0%;">3389, East 50th Street, Vernon, Los Angeles County, California, 90058, United States of America</div>`)[0];
+            popup_f025ded060e24f1381de06f8b9fbaa24.setContent(html_c43f26c6cac14aa081018a794d3a0d6e);
+        
+
+        circle_marker_8f35e8e3e19e4eb38f1e141b73478fe2.bindPopup(popup_f025ded060e24f1381de06f8b9fbaa24)
+        ;
+
+        
+    
+    
+            var circle_marker_2c6b9e4454b84ec796ea3be0acb8038e = L.circleMarker(
+                [34.03489957142857, -118.29164185714285],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_4052fdc819654a76b36838ad93174655);
+        
+    
+        var popup_2652b19269144000adbcb113b9144d8e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_440fc3a2cb4d47ac8d1d9bfb407feeec = $(`<div id="html_440fc3a2cb4d47ac8d1d9bfb407feeec" style="width: 100.0%; height: 100.0%;">2315, South Vermont Avenue, Adams Normandie Historic District, Jefferson, Los Angeles, Los Angeles County, California, 90007, United States of America</div>`)[0];
+            popup_2652b19269144000adbcb113b9144d8e.setContent(html_440fc3a2cb4d47ac8d1d9bfb407feeec);
+        
+
+        circle_marker_2c6b9e4454b84ec796ea3be0acb8038e.bindPopup(popup_2652b19269144000adbcb113b9144d8e)
+        ;
+
+        
+    
+    
+            var circle_marker_c81169d96b3b4a889db47008ef1994ba = L.circleMarker(
+                [34.048833489795925, -118.25716791836734],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_4052fdc819654a76b36838ad93174655);
+        
+    
+        var popup_d95ce60c5b9a4040b30402a8e0458431 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7063631aa29c4056926a5cb114d665ab = $(`<div id="html_7063631aa29c4056926a5cb114d665ab" style="width: 100.0%; height: 100.0%;">707, Wilshire Boulevard, Financial District, Bunker Hill, Los Angeles, Los Angeles County, California, 90017, United States of America</div>`)[0];
+            popup_d95ce60c5b9a4040b30402a8e0458431.setContent(html_7063631aa29c4056926a5cb114d665ab);
+        
+
+        circle_marker_c81169d96b3b4a889db47008ef1994ba.bindPopup(popup_d95ce60c5b9a4040b30402a8e0458431)
+        ;
+
+        
+    
+    
+            var circle_marker_a9af429aa6c4449488fb373e11cf86cd = L.circleMarker(
+                [34.04971, -118.25596585714285],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_4052fdc819654a76b36838ad93174655);
+        
+    
+        var popup_edcc1c00e1c34b17b72b9a2402c218ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c965d7b92bfb495588beb91af1c9509b = $(`<div id="html_c965d7b92bfb495588beb91af1c9509b" style="width: 100.0%; height: 100.0%;">556, South Hope Street, Financial District, Bunker Hill, Los Angeles, Los Angeles County, California, 90071, United States of America</div>`)[0];
+            popup_edcc1c00e1c34b17b72b9a2402c218ae.setContent(html_c965d7b92bfb495588beb91af1c9509b);
+        
+
+        circle_marker_a9af429aa6c4449488fb373e11cf86cd.bindPopup(popup_edcc1c00e1c34b17b72b9a2402c218ae)
+        ;
+
+        
+    
+    
+            var circle_marker_c5302a0a6e8a4e898dcc26bbedd0345b = L.circleMarker(
+                [33.965249244897954, -118.308902],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_4052fdc819654a76b36838ad93174655);
+        
+    
+        var popup_83b12c7ac67b4d8dadf20131ec011921 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a43e8d231554b80a4431e10224de9a5 = $(`<div id="html_5a43e8d231554b80a4431e10224de9a5" style="width: 100.0%; height: 100.0%;">8116, South Western Avenue, Van Ness, South Los Angeles, Los Angeles, Los Angeles County, California, 90047, United States of America</div>`)[0];
+            popup_83b12c7ac67b4d8dadf20131ec011921.setContent(html_5a43e8d231554b80a4431e10224de9a5);
+        
+
+        circle_marker_c5302a0a6e8a4e898dcc26bbedd0345b.bindPopup(popup_83b12c7ac67b4d8dadf20131ec011921)
+        ;
+
+        
+    
+    
+            var circle_marker_98e72ef499f74ab8b86c3438b8691a49 = L.circleMarker(
+                [34.0981514, -118.29121640000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_4052fdc819654a76b36838ad93174655);
+        
+    
+        var popup_d772a05830d94dcf9884c3d4758a681a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fcd8ef8254d341d08ced4d9b5d39704f = $(`<div id="html_fcd8ef8254d341d08ced4d9b5d39704f" style="width: 100.0%; height: 100.0%;">Sunset Boulevard, Little Armenia, Hollywood, Los Angeles, Los Angeles County, California, 90027-5517, United States of America</div>`)[0];
+            popup_d772a05830d94dcf9884c3d4758a681a.setContent(html_fcd8ef8254d341d08ced4d9b5d39704f);
+        
+
+        circle_marker_98e72ef499f74ab8b86c3438b8691a49.bindPopup(popup_d772a05830d94dcf9884c3d4758a681a)
+        ;
+
+        
+    
+    
+            var circle_marker_31a0a915b8414cf8a8d8d09261059755 = L.circleMarker(
+                [34.042075, -118.441604],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_4052fdc819654a76b36838ad93174655);
+        
+    
+        var popup_2df6e7f0dc3d47cf82bf8198ec2e477c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a21f4091f304c138adaf454f472f3a9 = $(`<div id="html_8a21f4091f304c138adaf454f472f3a9" style="width: 100.0%; height: 100.0%;">2000, Cotner Avenue, West Los Angeles, Westwood, Los Angeles, Los Angeles County, California, 90025, United States of America</div>`)[0];
+            popup_2df6e7f0dc3d47cf82bf8198ec2e477c.setContent(html_8a21f4091f304c138adaf454f472f3a9);
+        
+
+        circle_marker_31a0a915b8414cf8a8d8d09261059755.bindPopup(popup_2df6e7f0dc3d47cf82bf8198ec2e477c)
+        ;
+
+        
+    
+    
+            var circle_marker_7b9c035c47de41748b9054b2f9489e9c = L.circleMarker(
+                [34.0834609, -118.3509189],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_4052fdc819654a76b36838ad93174655);
+        
+    
+        var popup_c82f9e194bb8419a9204b0ec2d66fd89 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e18fb6195c3145848f7281bea64b56d2 = $(`<div id="html_e18fb6195c3145848f7281bea64b56d2" style="width: 100.0%; height: 100.0%;">KoreaTown Collective, 7382, Melrose Avenue, Hollywood, Los Angeles, Los Angeles County, California, 90046, United States of America</div>`)[0];
+            popup_c82f9e194bb8419a9204b0ec2d66fd89.setContent(html_e18fb6195c3145848f7281bea64b56d2);
+        
+
+        circle_marker_7b9c035c47de41748b9054b2f9489e9c.bindPopup(popup_c82f9e194bb8419a9204b0ec2d66fd89)
+        ;
+
+        
+    
+    
+            var circle_marker_399874964895410ea053085ffd95fad6 = L.circleMarker(
+                [33.961906609127176, -118.4212522807803],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_4052fdc819654a76b36838ad93174655);
+        
+    
+        var popup_054914ec6f8240ac99a9cb52eb4ff75a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_925638a30cdc4f62bfe15f69ba914fc7 = $(`<div id="html_925638a30cdc4f62bfe15f69ba914fc7" style="width: 100.0%; height: 100.0%;">8332, Lincoln Boulevard, Playa Vista, Los Angeles, Los Angeles County, California, 90045, United States of America</div>`)[0];
+            popup_054914ec6f8240ac99a9cb52eb4ff75a.setContent(html_925638a30cdc4f62bfe15f69ba914fc7);
+        
+
+        circle_marker_399874964895410ea053085ffd95fad6.bindPopup(popup_054914ec6f8240ac99a9cb52eb4ff75a)
+        ;
+
+        
+    
+    
+            var circle_marker_b3734c3de4a548c4987dafc84b11a6ae = L.circleMarker(
+                [34.236564641939175, -118.59617524329502],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_4052fdc819654a76b36838ad93174655);
+        
+    
+        var popup_4c0bc37abd194eaaa8d6d165a1d24436 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c956aa5083984c9cac57c33bc7945ee5 = $(`<div id="html_c956aa5083984c9cac57c33bc7945ee5" style="width: 100.0%; height: 100.0%;">9155, Deering Avenue, Chatsworth, Los Angeles, Los Angeles County, California, 91311, United States of America</div>`)[0];
+            popup_4c0bc37abd194eaaa8d6d165a1d24436.setContent(html_c956aa5083984c9cac57c33bc7945ee5);
+        
+
+        circle_marker_b3734c3de4a548c4987dafc84b11a6ae.bindPopup(popup_4c0bc37abd194eaaa8d6d165a1d24436)
+        ;
+
+        
+    
+    
+            var circle_marker_3364bb0f0d774380bb2c8d9c832608f6 = L.circleMarker(
+                [34.106353325581395, -118.33056444186045],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_4052fdc819654a76b36838ad93174655);
+        
+    
+        var popup_9f2a7312b17444de91b20c909f1f2b61 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a68fad80041d49edbe3b09e8bc4b5e0f = $(`<div id="html_a68fad80041d49edbe3b09e8bc4b5e0f" style="width: 100.0%; height: 100.0%;">1944, North Cahuenga Boulevard, Whitley Heights Historic District, Hollywood, Los Angeles, Los Angeles County, California, 90068, United States of America</div>`)[0];
+            popup_9f2a7312b17444de91b20c909f1f2b61.setContent(html_a68fad80041d49edbe3b09e8bc4b5e0f);
+        
+
+        circle_marker_3364bb0f0d774380bb2c8d9c832608f6.bindPopup(popup_9f2a7312b17444de91b20c909f1f2b61)
+        ;
+
+        
+    
+    
+            var circle_marker_02036da8992e4f50a71aa8253f1ea556 = L.circleMarker(
+                [34.03446327868852, -118.30378288524591],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_4052fdc819654a76b36838ad93174655);
+        
+    
+        var popup_7624cd29afc548b493ab2819a2ed8ad0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_856161f5167a42eda83371c802ff2448 = $(`<div id="html_856161f5167a42eda83371c802ff2448" style="width: 100.0%; height: 100.0%;">1824, West 24th Street, Adams Normandie Historic District, Jefferson, Los Angeles, Los Angeles County, California, 90018, United States of America</div>`)[0];
+            popup_7624cd29afc548b493ab2819a2ed8ad0.setContent(html_856161f5167a42eda83371c802ff2448);
+        
+
+        circle_marker_02036da8992e4f50a71aa8253f1ea556.bindPopup(popup_7624cd29afc548b493ab2819a2ed8ad0)
+        ;
+
+        
+    
+    
+            var circle_marker_8bcd331f862440d2a9d4f8af126e700a = L.circleMarker(
+                [34.09721413513513, -118.3387478918919],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_4052fdc819654a76b36838ad93174655);
+        
+    
+        var popup_e3b981beda2c4e2b85414082ec738fc0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8cdd4fec39324186bd662684e3a2faef = $(`<div id="html_8cdd4fec39324186bd662684e3a2faef" style="width: 100.0%; height: 100.0%;">1439, North Highland Avenue, Whitley Heights Historic District, Hollywood, Los Angeles, Los Angeles County, California, 90028, United States of America</div>`)[0];
+            popup_e3b981beda2c4e2b85414082ec738fc0.setContent(html_8cdd4fec39324186bd662684e3a2faef);
+        
+
+        circle_marker_8bcd331f862440d2a9d4f8af126e700a.bindPopup(popup_e3b981beda2c4e2b85414082ec738fc0)
+        ;
+
+        
+    
+    
+            var circle_marker_be9dd62f66f7473984fb83eabc06774f = L.circleMarker(
+                [34.024386, -118.41122605263156],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_4052fdc819654a76b36838ad93174655);
+        
+    
+        var popup_acae86d729c84694ae9c41ebfd6a3868 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fb71f10d225b4ec1a66740030b2ba636 = $(`<div id="html_fb71f10d225b4ec1a66740030b2ba636" style="width: 100.0%; height: 100.0%;">3520, Overland Avenue, Palms, Los Angeles, Los Angeles County, California, 90034, United States of America</div>`)[0];
+            popup_acae86d729c84694ae9c41ebfd6a3868.setContent(html_fb71f10d225b4ec1a66740030b2ba636);
+        
+
+        circle_marker_be9dd62f66f7473984fb83eabc06774f.bindPopup(popup_acae86d729c84694ae9c41ebfd6a3868)
+        ;
+
+        
+    
+    
+            var circle_marker_8ca45302c2cd4c43b4760d087fb73c53 = L.circleMarker(
+                [34.05065342857143, -118.4375959591837],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_4052fdc819654a76b36838ad93174655);
+        
+    
+        var popup_9cb460ba9c734889ad55a3423faccd55 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b9d3d5954d0461987dff3f85135c8ec = $(`<div id="html_8b9d3d5954d0461987dff3f85135c8ec" style="width: 100.0%; height: 100.0%;">1762, Westwood Boulevard, Westwood, Los Angeles, Los Angeles County, California, 90024, United States of America</div>`)[0];
+            popup_9cb460ba9c734889ad55a3423faccd55.setContent(html_8b9d3d5954d0461987dff3f85135c8ec);
+        
+
+        circle_marker_8ca45302c2cd4c43b4760d087fb73c53.bindPopup(popup_9cb460ba9c734889ad55a3423faccd55)
+        ;
+
+        
+    
+    
+            var circle_marker_2d5eca8f1c8340f09b2d57866babd436 = L.circleMarker(
+                [34.0908955, -118.36045825],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_4052fdc819654a76b36838ad93174655);
+        
+    
+        var popup_9d1a07649b974e6a8eddba9e9397abc3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0e6bae6d19b414eb39f58127ff23499 = $(`<div id="html_e0e6bae6d19b414eb39f58127ff23499" style="width: 100.0%; height: 100.0%;">7855, Santa Monica Boulevard, West Hollywood, Los Angeles County, California, 90046, United States of America</div>`)[0];
+            popup_9d1a07649b974e6a8eddba9e9397abc3.setContent(html_e0e6bae6d19b414eb39f58127ff23499);
+        
+
+        circle_marker_2d5eca8f1c8340f09b2d57866babd436.bindPopup(popup_9d1a07649b974e6a8eddba9e9397abc3)
+        ;
+
+        
+    
+    
+            var circle_marker_b289c306375a4f7a9064d524da5f0530 = L.circleMarker(
+                [34.0536909, -118.2427666],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_4052fdc819654a76b36838ad93174655);
+        
+    
+        var popup_75c2cd3b86c4403bb397c5db04af2fa7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa20996ea80946a49be7206ea49b6145 = $(`<div id="html_aa20996ea80946a49be7206ea49b6145" style="width: 100.0%; height: 100.0%;">Los Angeles, Los Angeles County, California, United States of America</div>`)[0];
+            popup_75c2cd3b86c4403bb397c5db04af2fa7.setContent(html_aa20996ea80946a49be7206ea49b6145);
+        
+
+        circle_marker_b289c306375a4f7a9064d524da5f0530.bindPopup(popup_75c2cd3b86c4403bb397c5db04af2fa7)
+        ;
+
+        
+    
+    
+            var circle_marker_c9c6697bc50d4fe5ada8981d98629be9 = L.circleMarker(
+                [33.885537, -118.40706100000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_4052fdc819654a76b36838ad93174655);
+        
+    
+        var popup_bd1bca9bf4924703be38b1e236401fec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_320ef0f6851845958772ee7217e4fa54 = $(`<div id="html_320ef0f6851845958772ee7217e4fa54" style="width: 100.0%; height: 100.0%;">1102, North Ardmore Avenue, Manhattan Beach, Los Angeles County, California, 90266, United States of America</div>`)[0];
+            popup_bd1bca9bf4924703be38b1e236401fec.setContent(html_320ef0f6851845958772ee7217e4fa54);
+        
+
+        circle_marker_c9c6697bc50d4fe5ada8981d98629be9.bindPopup(popup_bd1bca9bf4924703be38b1e236401fec)
+        ;
+
+        
+    
+    
+            var circle_marker_9e7379b2fd7e466a802db763541ee7a4 = L.circleMarker(
+                [34.0307631, -118.4774732],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_4052fdc819654a76b36838ad93174655);
+        
+    
+        var popup_e4200c8d88dc472481b9e30dfe8f3c23 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5dabff8022214aefb3f07eae72114fd2 = $(`<div id="html_5dabff8022214aefb3f07eae72114fd2" style="width: 100.0%; height: 100.0%;">Santa Monica Boulevard, Ocean Park, Santa Monica, Los Angeles County, California, 90404, United States of America</div>`)[0];
+            popup_e4200c8d88dc472481b9e30dfe8f3c23.setContent(html_5dabff8022214aefb3f07eae72114fd2);
+        
+
+        circle_marker_9e7379b2fd7e466a802db763541ee7a4.bindPopup(popup_e4200c8d88dc472481b9e30dfe8f3c23)
+        ;
+
+        
+    
+    
+            var circle_marker_aaed6b34642d4790aedc2f827eb535fd = L.circleMarker(
+                [34.031797684210524, -118.47602094736841],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_4052fdc819654a76b36838ad93174655);
+        
+    
+        var popup_86067f7fa2ec4133a0a930ff95cbe8ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fb9dbb74252945f789e8ec84c0489134 = $(`<div id="html_fb9dbb74252945f789e8ec84c0489134" style="width: 100.0%; height: 100.0%;">2428, Santa Monica Boulevard, Ocean Park, Santa Monica, Los Angeles County, California, 90404, United States of America</div>`)[0];
+            popup_86067f7fa2ec4133a0a930ff95cbe8ee.setContent(html_fb9dbb74252945f789e8ec84c0489134);
+        
+
+        circle_marker_aaed6b34642d4790aedc2f827eb535fd.bindPopup(popup_86067f7fa2ec4133a0a930ff95cbe8ee)
+        ;
+
+        
+    
+    
+            var circle_marker_eb9fd88f477e48d58c42cd431049cf2b = L.circleMarker(
+                [34.047041, -118.51783757142857],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_4052fdc819654a76b36838ad93174655);
+        
+    
+        var popup_ab6567c33e1d4797aec422fa5928c44a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7434d410fcc464eb8d047cf38ab049d = $(`<div id="html_a7434d410fcc464eb8d047cf38ab049d" style="width: 100.0%; height: 100.0%;">956, Kagawa Street, Pacific Palisades, Riviera, Los Angeles, Los Angeles County, California, 90272, United States of America</div>`)[0];
+            popup_ab6567c33e1d4797aec422fa5928c44a.setContent(html_a7434d410fcc464eb8d047cf38ab049d);
+        
+
+        circle_marker_eb9fd88f477e48d58c42cd431049cf2b.bindPopup(popup_ab6567c33e1d4797aec422fa5928c44a)
+        ;
+
+        
+    
+    
+            var circle_marker_e0c4288f88f7469f94177dda06b963e9 = L.circleMarker(
+                [34.04991078866711, -118.52754710926794],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_4052fdc819654a76b36838ad93174655);
+        
+    
+        var popup_27535ad6d3dd4edfa78898cf53841bd1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89794bafd053435fb40f9db1982dd575 = $(`<div id="html_89794bafd053435fb40f9db1982dd575" style="width: 100.0%; height: 100.0%;">15460, Albright Street, Pacific Palisades, Los Angeles, Los Angeles County, California, 90272, United States of America</div>`)[0];
+            popup_27535ad6d3dd4edfa78898cf53841bd1.setContent(html_89794bafd053435fb40f9db1982dd575);
+        
+
+        circle_marker_e0c4288f88f7469f94177dda06b963e9.bindPopup(popup_27535ad6d3dd4edfa78898cf53841bd1)
+        ;
+
+        
+    
+    
+            var circle_marker_11eee312c9554e9d8cc93fcb9551f0a3 = L.circleMarker(
+                [34.07221, -118.40260900000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_4052fdc819654a76b36838ad93174655);
+        
+    
+        var popup_2c4870a90d044971b93b956f41325483 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c199d9dfeab64ca685f83a83171948ff = $(`<div id="html_c199d9dfeab64ca685f83a83171948ff" style="width: 100.0%; height: 100.0%;">499, North Canon Drive, Beverly Hills, Los Angeles County, California, 90210, United States of America</div>`)[0];
+            popup_2c4870a90d044971b93b956f41325483.setContent(html_c199d9dfeab64ca685f83a83171948ff);
+        
+
+        circle_marker_11eee312c9554e9d8cc93fcb9551f0a3.bindPopup(popup_2c4870a90d044971b93b956f41325483)
+        ;
+
+        
+    
+    
+            var marker_4e3731a0fadb4ca0a49f91059e6ec4ea = L.marker(
+                [34.0, -118.35],
+                {}
+            ).addTo(map_4052fdc819654a76b36838ad93174655);
+        
+    
+            var icon_50fbf51eec314d32b8ce8ec4b8e38a04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "green", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4e3731a0fadb4ca0a49f91059e6ec4ea.setIcon(icon_50fbf51eec314d32b8ce8ec4b8e38a04);
+        
+    
+        var popup_aab761cdee2049ea9954a57763b00013 = L.popup({"maxWidth": 100});
+
+        
+            var i_frame_154980a013a54ef2a80857b3859604b8 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICBNYXJpanVhbmEgRGlzcGVuc2FyaWVzIE1hcA==" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_aab761cdee2049ea9954a57763b00013.setContent(i_frame_154980a013a54ef2a80857b3859604b8);
+        
+
+        marker_4e3731a0fadb4ca0a49f91059e6ec4ea.bindPopup(popup_aab761cdee2049ea9954a57763b00013)
+        ;
+
+        
+    
+</script>
