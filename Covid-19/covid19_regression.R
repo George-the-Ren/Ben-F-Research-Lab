@@ -14,18 +14,31 @@ sk <- covid_data %>%
   select(48:length(covid_data))
 print(sk)
 
-us_values <- log(as.numeric(usa))
+sk_2842 <- covid_data %>% 
+  filter(Country.Region == 'Korea, South') %>% 
+  select(28:42)
+print(sk_2842)
+
+us_values <- log(as.numeric(usa)) # us: day 48 onward
 print(us_values)
-sk_values <- log(as.numeric(sk))
+
+sk_values <- log(as.numeric(sk)) # south korea: day 48 onward
 print(sk_values)
 
-x <- seq(length(us_values))
-print(x)
+sk_2842_values <- log(as.numeric(sk_2842)) # south korea: days 28 to 42
+print(sk_2842)
 
-us_model <- lm(us_values ~ x)
-sk_model <- lm(sk_values ~ x)
+x_us <- seq(length(us_values))
+us_model <- lm(us_values ~ x_us)
+
+x_sk <- seq(length(sk_values))
+x_2842 <- seq(length(sk_2842))
+sk_model <- lm(sk_values ~ x_sk)
+sk_2842_model <- lm(sk_2842_values ~ x_2842)
+
 summary(us_model)
 summary(sk_model)
+summary(sk_2842_model)
 
 ggplot(NULL, aes(x = x, y = us_values)) +
   geom_point() +
