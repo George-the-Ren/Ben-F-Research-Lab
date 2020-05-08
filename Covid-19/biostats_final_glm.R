@@ -36,13 +36,16 @@ subset
 
 # LOG PLOT
 ggplot(NULL, aes(x = x)) +
-  geom_point(aes(y = subset$usa_deaths), size = 2) +
+  geom_point(aes(y = subset$usa_deaths), 
+             size = 5) +
   labs(x = 'Days', 
        y = 'Number of Deaths (log)', 
-       title = 'USA COVID-19 Deaths') + 
-  theme(plot.title = element_text(hjust = 0.5)) + 
-  scale_x_continuous(breaks = seq(0, max(subset$days)+5, by = 5)) + 
-  scale_y_continuous(breaks = seq(0, max(subset$usa_deaths), by = 1))
+       title = 'COVID-19 Deaths in the USA') + 
+  theme(plot.title = element_text(hjust = 0.5), 
+        text = element_text(size = 25)) + 
+  scale_x_continuous(breaks = seq(0, max(subset$days)+5, by = 5)) +
+  scale_y_continuous(breaks = seq(0, max(subset$usa_deaths)+1, by = 1)) 
+ggsave('/Users/Grant/Desktop/plot1.jpeg')
 
 # BREAK DATA INTO SUBSETS, ADD GROUPING VARIABLE, CONCAT, AND VISUALIZE SUBSETS
 subset1 <- subset %>% 
@@ -59,13 +62,16 @@ glm_df <- rbind(subset1, subset2)
 glm_df
 
 ggplot(NULL, aes(x = glm_df$days)) +
-  geom_point(aes(y = glm_df$usa_deaths), size = 2, color = 'red') +
+  geom_point(aes(y = glm_df$usa_deaths), 
+             size = 5, 
+             color = 'red') +
   labs(x = 'Days', 
        y = 'Number of Deaths (log)', 
        title = 'USA COVID-19 Deaths (Linear Subsets)') + 
-  theme(plot.title = element_text(hjust = 0.5)) + 
-  scale_x_continuous(breaks = seq(min(glm_df$days), max(glm_df$days), by = 2)) + 
-  scale_y_continuous(breaks = seq(min(glm_df$usa_deaths), max(glm_df$usa_deaths)+1, by = 1))
+  theme(plot.title = element_text(hjust = 0.5), 
+        text = element_text(size = 25)) + 
+  scale_x_continuous(breaks = seq(min(glm_df$days), max(glm_df$days), by = 3)) 
+ggsave('/Users/Grant/Desktop/plot2.jpeg')
 
 # CREATE GLM
 days <- glm_df$days
@@ -74,36 +80,9 @@ group <- glm_df$group
 
 model <- lm(deaths ~ days + as.factor(group) + as.factor(group)*days)
 summary(model)
-
-# MODELS FOR EACH SUBSET
-model1 <- lm(subset1$usa_deaths ~ subset1$days)
-model2 <- lm(subset2$usa_deaths ~ subset2$days)
-
-#summary(model1)
-#summary(model2)
-
-# MODEL 1 (SUBSET 1)
-# ggplot(NULL, aes(x = subset1$days)) +
-#   geom_point(aes(y = subset1$usa_deaths), size = 2, color = 'darkblue') +
-#   geom_line(aes(y = predict(model1, data.frame(x = subset1$days)))) +
-#   labs(x = 'Days', 
-#        y = 'Number of Deaths (log)', 
-#        title = 'Regression Results for Days 15 to 30') + 
-#   theme(plot.title = element_text(hjust = 0.5)) + 
-#   scale_x_continuous(breaks = seq(min(subset1$days), max(subset1$days), by = 1))
-
-# MODEL 2 (SUBSET 2)
-# ggplot(NULL, aes(x = subset2$days)) +
-#   geom_point(aes(y = subset2$usa_deaths), size = 2, color = 'red') +
-#   geom_line(aes(y = predict(model2, data.frame(x = subset2$days)))) +
-#   labs(x = 'Days', 
-#        y = 'Number of Deaths (log)', 
-#        title = 'Regression Results for Days 40 to 57') + 
-#   theme(plot.title = element_text(hjust = 0.5)) + 
-#   scale_x_continuous(breaks = seq(min(subset2$days), max(subset2$days), by = 1))
+confint(model)
 
 # SELECT DATA FROM DAY 57 ONWARDS
-
 deaths <- read.csv(deaths.raw)
 
 deaths <- deaths %>% 
@@ -127,24 +106,36 @@ new_data$group <- replicate(length(new_data$days), 1)
 
 new_data <- new_data %>% 
   filter(days > 57)
+new_data
 
 new_df <- rbind(glm_df, new_data)
-new_df
 
 # NEW DATA PLOT
-ggplot(NULL, aes(x = new_df$days)) +
-  geom_point(aes(y = new_df$usa_deaths), size = 2, color = 'blue') +
+ggplot(NULL) +
+  geom_point(aes(x = glm_df$days, 
+                 y = glm_df$usa_deaths, 
+                 color = 'days 15 to 30 and 40 to 57'), 
+             size = 5) +
+  geom_point(aes(x = new_data$days, 
+                 y = new_data$usa_deaths, 
+                 color = 'days 58 to 65'),
+             size = 5) + 
   labs(x = 'Days', 
-       y = 'Number of Deaths (log)', 
-       title = 'USA COVID-19 Deaths (Linear Subsets) With Days 57 Onward') + 
-  theme(plot.title = element_text(hjust = 0.5)) + 
-  scale_x_continuous(breaks = seq(min(new_df$days), max(new_df$days), by = 2)) + 
-  scale_y_continuous(breaks = seq(min(new_df$usa_deaths), max(new_df$usa_deaths)+1, by = 1))
+     y = 'Number of Deaths (log)', 
+     title = 'USA COVID-19 Deaths With Days 57 Onward') + 
+  theme(plot.title = element_text(hjust = 0.5), 
+        text = element_text(size = 25), 
+        legend.position = c(0.8, 0.15),
+        legend.text = element_text(size=20),
+        legend.title = element_blank()) + 
+  scale_x_continuous(breaks = seq(min(new_df$days), max(new_df$days), by = 3))
+ggsave('/Users/Grant/Desktop/plot3.jpeg')
 
 # CREATE GLM WITH NEW DATA
 days <- new_df$days
 deaths <- new_df$usa_deaths
 group <- new_df$group
 
-model <- lm(deaths ~ days + as.factor(group) + as.factor(group)*days)
-summary(model)
+new_model <- lm(deaths ~ days + as.factor(group) + as.factor(group)*days)
+summary(new_model)
+confint(new_model)
